@@ -1,0 +1,83 @@
+.title{
+  font-size: x-large;
+  font-weight: bolder;
+  margin: 15px;
+  text-align: center;
+}
+
+.info{
+  text-align: center;
+  border: 2px solid gray;
+  margin: auto;
+  width: 300px;
+  padding: 5px;
+}
+
+.state-mainContent{
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.state-figure{
+  display: flex;
+}
+
+.state-water{
+  width: 30%;
+  height: 100px;
+  align-self: flex-end;
+  background-color: #0000ff;
+  background-image : url(noise1.png);
+}
+
+.state-islandW{
+  width: 30%;
+  margin:auto;
+  margin-left: 5%;
+}
+
+.state-islandE{
+  width: 30%;
+  margin:auto;
+  margin-right: 5%;
+}
+
+.island-sand{
+  border: 2px solid gray;
+  height: 130px;
+  background-image : url(noise2.png);
+  background-color: #c2b280;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.island-text{
+  font-weight: bolder;
+  display: inline-block;
+  padding: 10px;
+  background-color: #ffffe6;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.boat-sail{
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 100px solid #d9d9d9;
+  margin: auto;
+}
+
+.boat-base{
+  border-top: 40px solid #cc9966;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  width: 120px;
+  margin: auto;
+}
