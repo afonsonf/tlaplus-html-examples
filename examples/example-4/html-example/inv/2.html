@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Missionaries and Cannibals</title>
+    <link href="../../template/MissionariesAndCannibals_Template.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="title"> Missionaries and Cannibals </div>
+
+<div class="info">
+    Depth: 2
+</div>
+
+<div class="state-mainContent">
+    <div id="figure" class="state-figure">
+        <div id="islandW" class="state-islandW">
+            <div id="island-boat" class="island-boat" style="">
+                <div class="boat-sail"></div>
+                <div class="boat-base"></div>
+            </div>
+            <div class="island-sand">
+                <div class="island-text"> {}, Boat: {c1, c2} </div>
+            </div>
+        </div>
+        <div id="water" class="state-water"></div>
+        <div id="islandE" class="state-islandE">
+            <div id="island-boat" class="island-boat" style="visibility: hidden;">
+                <div class="boat-sail"></div>
+                <div class="boat-base"></div>
+            </div>
+            <div class="island-sand">
+                <div class="island-text"> {c3, m1, m2, m3} </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script>
+window.onkeyup = function(event) {
+let key = event.key.toUpperCase();
+if(key == 'ARROWLEFT'){
+window.location.replace("1.html");
+}
+if(key == 'ARROWRIGHT'){
+window.location.replace("3.html");
+}
+}
+</script>
+
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EWD998</title>
+
+<style type="text/css">
+.default_grid {
+display: grid;
+}
+.default_box {
+border: 1px solid black;
+}
+.default_circle {
+border-radius: 50%;
+}
+.ClassTitle {
+font-size: x-large;
+font-weight: bolder;
+border: 0px;
+}
+.ClassInfo {
+margin: auto;
+padding: 5px;
+text-align: center;
+}
+.ClassNode {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+padding: 8px;
+flex-flow: wrap;
+}
+.ClassNodeTainted {
+background-color: lightgray;
+}
+.ClassNodeActive {
+border-radius: 50%;
+}
+.ClassCenterTransparentBox {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+border: 0px;
+margin: auto;
+}
+.ClassToken {
+border: 3px solid black;
+margin-top: 15px;
+}
+.ClassTokenTainted {
+background-color: lightgray;
+}
+.ClassTokenNormal {
+background-color: white;
+}
+.ClassTokenHidden {
+visibility: hidden;
+}
+.node-1 {
+grid-area: n1;
+}
+.node-2 {
+grid-area: n2;
+}
+.node-3 {
+grid-area: n3;
+}
+.node-4 {
+grid-area: n4;
+}
+.node-5 {
+grid-area: n5;
+}
+.node-6 {
+grid-area: n6;
+}
+.node-7 {
+grid-area: n7;
+}
+.node-8 {
+grid-area: n8;
+}
+.node-9 {
+grid-area: n9;
+}
+.ClassRing {
+grid-template-areas:  
+".  .  n1 .  . "
+".  n2 n1 n9 . "
+"n3 n3 .  n8 n8"
+"n4 n4 .  n7 n7"
+".  n5 .  n6 . ";
+align-content: stretch;
+align-items: center;
+grid-template-rows: 16%;
+width: 100%; height: 100%;
+}
+</style>
+</head>
+<body>
+<div id="page-layout">
+<div id="info-layout">
+<div id="title" class="default_box ClassInfo ClassTitle" style="width: 300px; height: auto;">
+<span id="title">
+EWD998
+</span>
+</div>
+<div id="info" class="default_box ClassInfo" style="width: 300px; height: auto;">
+<span id="info-legend-1">
+Circle: Active, Gray: Tainted
+</span>
+<br>
+<br>
+<span id="info-legend-2">
+Line: Message, Arrow: Receiver
+</span>
+<br>
+<br>
+<span id="info-level-s">
+Level: 
+</span>
+<span id="info-level-x">
+11
+</span>
+</div>
+</div>
+<br>
+<div id="content-layout">
+<div id="grid-container" class="default_box ClassCenterTransparentBox" style="width: 70%; height: 700px;">
+<div id="ring" class="default_grid ClassRing">
+<div id="node-container" class="default_box ClassCenterTransparentBox ClassNode node-1" style="width: 100px; height: 100px;">
+<div id="node-1" class="default_box ClassNode" style="width: 80px; height: 80px;">
+<div id="node-name" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-name-text">
+Node 1
+</span>
+</div>
+<div id="node-counter" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-counter-text">
+0
+</span>
+</div>
+</div>
+<div id="node-token-container" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<div id="token" class="default_box default_circle ClassTokenHidden ClassToken" style="width: 30px; height: 20px;">
+<span id="token-counter">
+1
+</span>
+</div>
+</div>
+</div>
+<div id="node-container" class="default_box ClassCenterTransparentBox ClassNode node-2" style="width: 100px; height: 100px;">
+<div id="node-2" class="default_box ClassNode" style="width: 80px; height: 80px;">
+<div id="node-name" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-name-text">
+Node 2
+</span>
+</div>
+<div id="node-counter" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-counter-text">
+0
+</span>
+</div>
+</div>
+<div id="node-token-container" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<div id="token" class="default_box default_circle ClassTokenHidden ClassToken" style="width: 30px; height: 20px;">
+<span id="token-counter">
+1
+</span>
+</div>
+</div>
+</div>
+<div id="node-container" class="default_box ClassCenterTransparentBox ClassNode node-3" style="width: 100px; height: 100px;">
+<div id="node-3" class="default_box ClassNode" style="width: 80px; height: 80px;">
+<div id="node-name" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-name-text">
+Node 3
+</span>
+</div>
+<div id="node-counter" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-counter-text">
+0
+</span>
+</div>
+</div>
+<div id="node-token-container" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<div id="token" class="default_box default_circle ClassTokenHidden ClassToken" style="width: 30px; height: 20px;">
+<span id="token-counter">
+1
+</span>
+</div>
+</div>
+</div>
+<div id="node-container" class="default_box ClassCenterTransparentBox ClassNode node-4" style="width: 100px; height: 100px;">
+<div id="node-4" class="default_box ClassNode" style="width: 80px; height: 80px;">
+<div id="node-name" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-name-text">
+Node 4
+</span>
+</div>
+<div id="node-counter" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-counter-text">
+0
+</span>
+</div>
+</div>
+<div id="node-token-container" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<div id="token" class="default_box default_circle ClassTokenHidden ClassToken" style="width: 30px; height: 20px;">
+<span id="token-counter">
+1
+</span>
+</div>
+</div>
+</div>
+<div id="node-container" class="default_box ClassCenterTransparentBox ClassNode node-5" style="width: 100px; height: 100px;">
+<div id="node-5" class="default_box ClassNodeTainted ClassNode" style="width: 80px; height: 80px;">
+<div id="node-name" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-name-text">
+Node 5
+</span>
+</div>
+<div id="node-counter" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-counter-text">
+0
+</span>
+</div>
+</div>
+<div id="node-token-container" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<div id="token" class="default_box default_circle ClassTokenTainted ClassToken" style="width: 30px; height: 20px;">
+<span id="token-counter">
+1
+</span>
+</div>
+</div>
+</div>
+<div id="node-container" class="default_box ClassCenterTransparentBox ClassNode node-6" style="width: 100px; height: 100px;">
+<div id="node-6" class="default_box ClassNode" style="width: 80px; height: 80px;">
+<div id="node-name" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-name-text">
+Node 6
+</span>
+</div>
+<div id="node-counter" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-counter-text">
+0
+</span>
+</div>
+</div>
+<div id="node-token-container" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<div id="token" class="default_box default_circle ClassTokenHidden ClassToken" style="width: 30px; height: 20px;">
+<span id="token-counter">
+1
+</span>
+</div>
+</div>
+</div>
+<div id="node-container" class="default_box ClassCenterTransparentBox ClassNode node-7" style="width: 100px; height: 100px;">
+<div id="node-7" class="default_box ClassNode" style="width: 80px; height: 80px;">
+<div id="node-name" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-name-text">
+Node 7
+</span>
+</div>
+<div id="node-counter" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-counter-text">
+1
+</span>
+</div>
+</div>
+<div id="node-token-container" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<div id="token" class="default_box default_circle ClassTokenHidden ClassToken" style="width: 30px; height: 20px;">
+<span id="token-counter">
+1
+</span>
+</div>
+</div>
+</div>
+<div id="node-container" class="default_box ClassCenterTransparentBox ClassNode node-8" style="width: 100px; height: 100px;">
+<div id="node-8" class="default_box ClassNode" style="width: 80px; height: 80px;">
+<div id="node-name" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-name-text">
+Node 8
+</span>
+</div>
+<div id="node-counter" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-counter-text">
+0
+</span>
+</div>
+</div>
+<div id="node-token-container" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<div id="token" class="default_box default_circle ClassTokenHidden ClassToken" style="width: 30px; height: 20px;">
+<span id="token-counter">
+1
+</span>
+</div>
+</div>
+</div>
+<div id="node-container" class="default_box ClassCenterTransparentBox ClassNode node-9" style="width: 100px; height: 100px;">
+<div id="node-9" class="default_box ClassNodeTainted ClassNode" style="width: 80px; height: 80px;">
+<div id="node-name" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-name-text">
+Node 9
+</span>
+</div>
+<div id="node-counter" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<span id="node-counter-text">
+-1
+</span>
+</div>
+</div>
+<div id="node-token-container" class="default_box ClassCenterTransparentBox" style="width: 100%; height: 20px;">
+<div id="token" class="default_box default_circle ClassTokenHidden ClassToken" style="width: 30px; height: 20px;">
+<span id="token-counter">
+1
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+<script src="../../lib/leader-line.min.js"></script>
+<script>
+
+</script>
+<script>
+window.onkeyup = function(event) {
+let key = event.key.toUpperCase();
+if(key == 'ARROWLEFT'){
+window.location.replace("10.html");
+}
+if(key == 'ARROWRIGHT'){
+window.location.replace("12.html");
+}
+}
+</script>
+</html>
