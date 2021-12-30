@@ -4,20 +4,21 @@
 
 * Get tla2tools.jar from: https://github.com/tlaplus/tlaplus.
 * Get CommunityModules-deps.jar from https://github.com/tlaplus/CommunityModules.
+* Have the CommunityModules-deps.jar in the same folder of tla2tools.jar.
 
 To run the specification:
 ```bash
-java -XX:+UseParallelGC -DTLA-Library=path/to/CommunityModules-deps.jar -cp path/to/tla2tools.jar tlc2.TLC -config MissionariesAndCannibals.tla -noGenerateSpecTE MissionariesAndCannibals
+java -XX:+UseParallelGC -cp path/to/tla2tools.jar tlc2.TLC -config MissionariesAndCannibals.tla -noGenerateSpecTE MissionariesAndCannibals
 ```
 
 To run the template with test data:
 ```bash
-java -XX:+UseParallelGC -DTLA-Library=path/to/CommunityModules-deps.jar -cp path/to/tla2tools.jar tlc2.TLC -config MissionariesAndCannibals_Template.tla -noGenerateSpecTE MissionariesAndCannibals_Template
+java -XX:+UseParallelGC -cp path/to/tla2tools.jar tlc2.TLC -config MissionariesAndCannibals_Template.tla -noGenerateSpecTE MissionariesAndCannibals_Template
 ```
 
 To run the template with the specification:
 ```bash
-java -XX:+UseParallelGC -DTLA-Library=path/to/CommunityModules-deps.jar -cp path/to/tla2tools.jar tlc2.TLC -config MissionariesAndCannibals_Anim.tla -noGenerateSpecTE MissionariesAndCannibals_Anim
+java -XX:+UseParallelGC -cp path/to/tla2tools.jar tlc2.TLC -config MissionariesAndCannibals_Anim.tla -noGenerateSpecTE MissionariesAndCannibals_Anim
 ```
 
 #### Notes

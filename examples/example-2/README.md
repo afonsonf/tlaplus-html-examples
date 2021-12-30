@@ -4,20 +4,21 @@
 
 * Get tla2tools.jar from: https://github.com/tlaplus/tlaplus.
 * Get CommunityModules-deps.jar from https://github.com/tlaplus/CommunityModules.
+* Have the CommunityModules-deps.jar in the same folder of tla2tools.jar.
 
 To run the specification:
 ```bash
-java -XX:+UseParallelGC -DTLA-Library=path/to/CommunityModules-deps.jar -cp path/to/tla2tools.jar tlc2.TLC -config EWD998.tla -noGenerateSpecT EWD998
+java -XX:+UseParallelGC -cp path/to/tla2tools.jar tlc2.TLC -config EWD998.tla -noGenerateSpecT EWD998
 ```
 
 To run the template with test data:
 ```bash
-java -XX:+UseParallelGC -DTLA-Library=path/to/CommunityModules-deps.jar -cp path/to/tla2tools.jar tlc2.TLC -config EWD998_Template.tla -noGenerateSpecTE EWD998_Template
+java -XX:+UseParallelGC -cp path/to/tla2tools.jar tlc2.TLC -config EWD998_Template.tla -noGenerateSpecTE EWD998_Template
 ```
 
 To run the template with the specification:
 ```bash
-java -XX:+UseParallelGC -DTLA-Library=path/to/CommunityModules-deps.jar -cp path/to/tla2tools.jar tlc2.TLC -config EWD998_Anim.tla -simulate -seed 420 -noGenerateSpecTE EWD998_Anim
+java -XX:+UseParallelGC -cp path/to/tla2tools.jar tlc2.TLC -config EWD998_Anim.tla -simulate -seed 420 -noGenerateSpecTE EWD998_Anim
 ```
 
 #### Notes

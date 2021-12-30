@@ -16,10 +16,10 @@ Color == {"white", "black"}
 TaintedColorNode == "lightgray"
 TaintedColorToken == "lightgray"
 
-ClassRingItem(number_nodes) == StringSeqToString(
+ClassRingItem(number_nodes) == FlattenSeq(
     [i \in 1..number_nodes |->
         HTMLClass(".node-" \o ToString(i),<<HTMLAttribute("grid-area", "n" \o ToString(i))>>)]
-, "\n")
+)
 
 Classes == <<
     HTMLClass(".ClassTitle", <<

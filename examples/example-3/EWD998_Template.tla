@@ -15,10 +15,10 @@ LEVEL == TLCGet("level")
 TaintedColorNode == "lightgray"
 TaintedColorToken == "lightgray"
 
-ClassRingItem(number_nodes) == StringSeqToString(
+ClassRingItem(number_nodes) == FlattenSeq(
     [i \in 1..number_nodes |->
         HTMLClass(".node-" \o ToString(i),<<HTMLAttribute("grid-area", "n" \o ToString(i))>>)]
-, "\n")
+)
 
 Classes == <<
     HTMLClass(".ClassTitle", <<
@@ -64,13 +64,13 @@ Classes == <<
     >>),
     ClassRingItem(N),
     HTMLClass(".ClassRing", <<
-        HTMLAttribute("grid-template-areas",StringSeqToString(<<" ",
+        HTMLAttribute("grid-template-areas",FlattenSeq(<<" ",
             "\".  .  n1 .  . \"",
             "\".  n2 n1 n9 . \"",
             "\"n3 n3 .  n8 n8\"",
             "\"n4 n4 .  n7 n7\"",
             "\".  n5 .  n6 . \""
-        >>, "\n")),
+        >>)),
         HTMLAttribute("align-content", "stretch"),
         HTMLAttribute("align-items", "center"),
         HTMLAttribute("grid-template-rows", "16%"),

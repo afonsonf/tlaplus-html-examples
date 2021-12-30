@@ -40,7 +40,7 @@ ClassOfBoat(vars, side) ==
     THEN ""
     ELSE "visibility: hidden;"
 
-Template(vars) == StringFill(HTMLTemplate, <<
+Template(vars) == HTMLFill(HTMLTemplate, <<
     <<"%depth%", ToString(LEVEL)>>,
     <<"%islandW%", PeopleOnIsland(vars, "W") >>,
     <<"%islandE%", PeopleOnIsland(vars, "E") >>,
