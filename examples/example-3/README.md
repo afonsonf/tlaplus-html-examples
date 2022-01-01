@@ -26,6 +26,10 @@ The variable `messages` was added to the EWD998 specification to have the messag
 
 The Anim module will print a path of states that leads to a state where the invariant is violated. To go forward or backwards in the path you can use the left and right arrow keys (if the file is opened in a browser).
 
+#### Screenshot
+
+![](html-example/screenshot.png)
+
 #### REF
 https://github.com/tlaplus/Examples/tree/master/specifications/ewd998
 
